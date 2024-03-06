@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LILU</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,500;1,700&display=swap" rel="stylesheet">
+    <!--and Font-->
+    
+    <!--feater icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!--and feater-->
+
+</head>
+
+
+<body>
+
+    <!--navbar start-->
+
+
+   
+
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">Kalkulator LI<span>LU.</span></a>
+        
+        <div class="navbar-nav">
+            <a href="#dashboard">Dashboard</a>
+            <a href="#Panduan">Panduan</a>
+            <a href="#Info">Info</a>
+        </div> 
+
+        <div class="navbar-extra">
+        
+        <a href="#" id="menu" class="icon">
+            <i data-feather="menu"></i> 
+        </a>
+
+        </div>
+
+    </nav>
+<!--navbar and-->
+
+
+<div class="modal" id="item-detail-modal"><!--buat warna hitam transparan-->
+    <div class="modal-container"> <!--box detail-->
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content"> <!--isi detail-->
+            <img src="" alt="">
+        <div class="product-content">
+            <h3>Lingkar lengan : </h3>
+            <a href="#card" class="button"> <p> < 30 </p> </a>
+            <a href="#card2" class="button"> <p> > 30 </p> </a>
+        </div>
+        <div class="chose">
+            
+            
+        </div>
+
+        </div>
+
+    </div>
+
+
+
+</div>
+
+<!--star Kalkulator crandal-->
+
+<section>
+    <div class="card" id="card">
+    <div class="coontainer2">
+        <div class="judul"> <h1><i></i></h1></div>
+        <div class="box1">
+            
+            <div class="card_cover male">
+
+             <div class="judul">
+                <h2>Jenis Kelamin</h2>
+             </div>
+             <div class="gender">
+             <div class="gender-pria">
+                <input type="checkbox" class="checkbox" id="pria">
+                <label for="pria"><h2>Pria</h2></label>
+                
+             </div>
+             <div class="gender-wanita">
+                <input type="checkbox" name="" id="wanita" class="checkbox">
+                <label for="wanita"><h2>Wanita</h2></label>
+             </div>
+            </div>
+                
+                
+             
+            <div class="cover">
+                
+            <div class="Content1">
+                <div class="input">
+                   
+                    <label for="LILA">Lingkar lengan (cm)</label>
+                    <br>
+                    <input type="number" id="LILA" placeholder="cm" >
+                </div>
+    
+                <div class="input" >
+                    <label for="TILU">Tinggi Lutut(cm)</label>
+                    <br>
+                    <input type="number" id="TILU" placeholder="cm" name="tinggi lutut">
+                </div>
+    
+                <button id="kalkulasi">Hitung</button>
+
+            </div>
+            <div class="result">
+                <p><h3>Hasil Estimasi</h3></p>
+                <div id="result">00.00</div>
+                <!--<p class="comment"> oke yah </p>
+                    -->
+                     </div>
+
+        
+            </div>
+   
+
+            </div> 
+
+    </div>
+</div>
+        
+    </section>
+<!--and Kalkulator khaterina -->
+
+<!--star Kalkulator crandal-->
+
+<section>
+    <div class="card2" id="card2">
+    <div class="coontainer3">
+        <div class="judul"> <h1><i></i></h1></div>
+        <div class="box2">
+            
+            <div class="card_cover male2">
+
+             <div class="judul">
+                <h2>Jenis Kelamin</h2>
+             </div>
+
+             <div class="gender-pria2">
+                <input type="checkbox" id="pria" class="checkbox3">
+                <label for="pria"><h2>Pria</h2></label>
+                
+             </div>
+             <div class="gender-wanita2">
+                <input type="checkbox" name="" id="wanita" class="checkbox2">
+                <label for="wanita"><h2>Wanita</h2></label>
+             </div>
+   
+                
+                
+             
+            <div class="cover2">
+                
+            <div class="Content2">
+                <div class="input2">
+                   
+                    <label for="LILA"TIL>Lingkar lengan (cm)</label>
+                    <br>
+                    <input type="number" id="LILA" placeholder="cm" >
+                </div>
+    
+                <div class="input2" >
+                    <label for="PABA">Panjang badan(cm)</label>
+                    <br>
+                    <input type="number" id="PABA" placeholder="cm" name="Panjang Badan">
+                </div>
+    
+                <button id="kalkulasi">Hitung</button>
+
+            </div>
+            <div class="result2" id="result">
+                <p><h3>Hasil Estimasi</h3></p>
+                <div id="result">00.00</div>
+                <!--<p class="comment"> oke yah </p>
+                    -->
+                     </div>
+
+        
+            </div>
+   
+
+            </div> 
+
+    </div>
+</div>
+        
+    </section>
+<!--and Kalkulator crandal -->
+
+
+
+
+
+
+<!--start Hero section-->
+
+<section class="hero" id="dashboard"><!--agar penuh satu layar dan punya bg image-->
+    <main class="box">
+    <main class="content">
+        <h1>Menghitung berat <br> badan dengan<span> LILU</span> </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, labore.Lorem ipsum dolor sit amet.</p>
+
+
+        <a href="#calculator"" class="kalkulator">Hitung</a>
+
+
+
+<!--and Pop-up-->
+
+
+
+
+
+    </main> <!--simpan isi content-->
+    <div class="logo">
+        <img src="oke..png" alt="">
+    </div>
+ </main>
+
+
+ <!--Modal Hitung-->
+
+
+ 
+ <!--And Modal Hitung-->
+
+
+
+
+</section>
+
+
+<!--start about section-->
+
+<section id="Panduan" class="about">
+    <div class="about main-container">
+        <h2 class="pre-title">Panduan</h2>
+
+    <div class="grid-3">
+        <!--Lingkar lengan-->
+        <div class="service">
+
+        <h4>Lingkar lengan</h4>
+                       
+        <div class="icon">
+        <a href="#popup"><img src="LEL.png" alt=""></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, alias!</p>
+
+            <a href="#popup1" class="cta">klik</a>
+        </div>
+
+        <!--start Pop-up-->
+        <div class="popup1" id="popup1">
+            <div class="popup-container">
+                <a href="#Panduan" class="close-icon"><i data-feather="x"></i></a>
+                <div class="popup-content">
+                    <img src="LEL.png" alt="lingkar lengan">
+                    <div class="popup-content-detail">
+                        <h3>Lingkar lengan </h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, illo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--and Pop-up-->
+
+
+        
+        </div>       
+        <!--Tinggi lutut-->
+        <div class="service">
+            
+            <h4>Tinggi lutut</h4>
+
+        <div class="icon">
+       <a href="#popup2"><img src="TL.png" alt=""></a>
+         
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, alias!</p>
+
+            <a href="#popup2" class="cta">klik</a>
+        </div>
+
+                <!--start Pop-up-->
+                <div class="popup2" id="popup2">
+                    <div class="popup-container2">
+                        <a href="#Panduan" class="close-icon2"><i data-feather="x"></i></a>
+                        <div class="popup-content2">
+                            <img src="TL.png" alt="lingkar lengan">
+                            <div class="popup-content-detail2">
+                                <h3>Linkar lengan </h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, illo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+        
+                <!--and Pop-up-->
+
+        
+
+
+        </div>  
+        
+
+
+        <!--Panjang badan-->
+        <div class="service">
+            
+            <h4>Panjang badan</h4>
+
+        <div class="icon">
+       <a href="#popup3"> <img src="PJ.png" alt=""> </a>
+         
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, alias!</p>
+
+            <a href="#popup3" class="cta">klik</a>
+        </div>
+
+                <!--start Pop-up-->
+                <div class="popup3" id="popup3">
+                    <div class="popup-container3">
+                        <a href="#Panduan" class="close-icon3"><i data-feather="x"></i></a>
+                        <div class="popup-content3">
+                            <img src="PJ.png" alt="lingkar lengan3">
+                            <div class="popup-content-detail3">
+                                <h3>Linkar lengan </h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, illo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+        
+                <!--and Pop-up-->
+
+        
+
+
+        </div>  
+
+
+
+
+        
+    </div>
+    </div>
+
+
+</section>
+
+<!--End about section 1.12 detik-->
+
+<section id="Info" class="info">
+    <div class="about main-container">
+        <h2 class="pre-title">Info</h2>
+
+    <div class="grid-3">
+        <!--Lingkar lengan-->
+        <div class="service">
+
+        <h4>Rumus</h4>
+                       
+        <div class="icon">
+        <a href="#formula"> <img src="formula.png" alt=""> </a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, alias!</p>
+
+            <a href="#formula" class="cta">klik</a>
+        </div>
+
+             <!--start Pop-up-->
+                <div class="popup-formula" id="formula">
+                    <div class="popup-container-formula">
+                        <a href="#info" class="close-icon-formula"><i data-feather="x"></i></a>
+                            <div class="popup-content-formula">
+                                <img src="formula.png" alt="lingkar lengan">
+                                <div class="popup-content-detail-formula">
+                                <h3>Linkar lengan </h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, illo.</p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             
+            <!--and Pop-up-->
+        
+        </div>       
+        <!--Tinggi lutut-->
+        <div class="service">
+            <h4>Kriteria</h4>
+            <div class="icon">
+             <a href="#kriteria">  <img src="kriteria.png" alt=""> </a> 
+            </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, alias!</p>
+
+            <a href="#kriteria" class="cta">klik</a>
+
+             <!--start Pop-up-->
+             <div class="popup-kriteria" id="kriteria">
+                <div class="popup-container-kriteria">
+                    <a href="#info" class="close-icon-kriteria"><i data-feather="x"></i></a>
+                        <div class="popup-content-kriteria">
+                            <img src="kriteria.png" alt="kriteria">
+                            <div class="popup-content-detail-kriteria">
+                            <h3>Linkar lengan </h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, illo.</p>
+                    </div>
+                </div>
+            </div>
+         </div>
+         
+        <!--and Pop-up-->
+
+        
+        
+        </div>  
+        <!--Panjang badan-->
+        <div class="service">
+            <h4>Tentang</h4>
+            <div class="icon">
+            <a href="#alasan">    <img src="alasan.png" alt=""> </a>
+            </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, alias!</p>
+
+            <a href="#alasan" class="cta">klik</a>
+
+                 <!--start Pop-up-->
+                 <div class="popup-alasan" id="alasan">
+                    <div class="popup-container-alasan">
+                        <a href="#info" class="close-icon-alasan"><i data-feather="x"></i></a>
+                            <div class="popup-content-alasan">
+                                <img src="alasan.png" alt="alasan">
+                                <div class="popup-content-detail-alasan">
+                                <h3>Linkar lengan </h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, illo.</p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             
+            <!--and Pop-up-->
+        
+        </div>  
+
+
+
+        
+    </div>
+    </div>
+
+
+</section>
+
+<!--footer-->
+
+
+<footer>
+    <div class="sosial">
+        <a href="#"><i data-feather="instagram" class="i"></i></a>
+        <a href="#"><i data-feather="facebook" class="i"></i></a>
+        <a href="#"><i data-feather="twitter" class="i"></i></a>
+    </div>
+
+    <div class="links">
+        <a href="#dashboard">Dashboard</a>
+        <a href="#Panduan">Panduan</a>
+        <a href="#Info">Info</a>
+    </div>
+
+    <div class="credit">
+        <p> Created by Siloam Hospital Purwakarta
+        | &copy; 2024.</p>
+
+    </div>
+
+</footer>
+<!--and footer-->
+
+
+
+
+
+
+
+
+    <!--feater icon -->
+    <script>
+        feather.replace();
+    </script>
+<!--and feater-->
+<!--my javascript-->
+<script src="lilu.js"></script>
+</body>
+
+
+
+</html>
